@@ -55,7 +55,7 @@
 					<key>HS01</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front USB 3.1 Gen 2 Type-C Port - USB 2.0 Mode (USB C Motherboard Header)</string>
+						<string>USB 3.1 Gen 2 Motherboard Header (Front USB Type-C Port)</string>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>name</key>
@@ -68,7 +68,7 @@
 					<key>HS03</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear USB 3.1 Gen 2 Port (Red) - Top Port (USB 2.0 Mode)</string>
+						<string>USB 3.1 Gen 2 Type-A Top Red Port</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -81,7 +81,7 @@
 					<key>HS04</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear USB 3.1 Gen 2 Port (Red) - Bottom Port (USB 2.0 Mode)</string>
+						<string>USB 3.1 Gen 2 Type-A Bottom Red Port</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -94,7 +94,7 @@
 					<key>HS06</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front Case USB 3.1 Gen 2 Port (USB 2.0 Mode)</string>
+						<string>USB 3.1 Gen 2 Motherboard Header (Front USB Type-A Port)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -107,7 +107,7 @@
 					<key>HS07</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear 4 Port USB DAC UP Hub (USB 2.0 Mode)</string>
+						<string>USB 3.0 Type-A 4 Port Hub</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -120,7 +120,7 @@
 					<key>HS08</key>
 					<dict>
 						<key>Comment</key>
-						<string>Intel Titan Ridge Thunderbolt 3 Port - Top Port (USB 2.0 Mode)</string>
+						<string>Intel Thunderbolt 3 (USB 3.1 Gen 2 Type-C Top Port)</string>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>name</key>
@@ -133,7 +133,7 @@
 					<key>HS09</key>
 					<dict>
 						<key>Comment</key>
-						<string>Corsair K55 Keyboard - Rear USB 2.0 Port (Right Port)</string>
+						<string>USB 2.0 Type-A Right Port</string>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>name</key>
@@ -146,7 +146,7 @@
 					<key>HS10</key>
 					<dict>
 						<key>Comment</key>
-						<string>Corsair Harpoon Mouse - Rear USB 2.0 Port (Left Port)</string>
+						<string>USB 2.0 Type-A Left Port</string>
 						<key>UsbConnector</key>
 						<integer>0</integer>
 						<key>name</key>
@@ -159,7 +159,7 @@
 					<key>HS11</key>
 					<dict>
 						<key>Comment</key>
-						<string>Broadcom BRCM20702 (Internal USB 2.0 Header)</string>
+						<string>USB 2.0 Motherboard Header (Internal Broadcom USB Bluetooth Bus)</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>name</key>
@@ -172,7 +172,7 @@
 					<key>HS13</key>
 					<dict>
 						<key>Comment</key>
-						<string>Intel Titan Ridge Thunderbolt 3 Port - Bottom Port (USB 2.0 Mode)</string>
+						<string>Intel Thunderbolt 3 (USB 3.1 Gen 2 Type-C Bottom Port)</string>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>name</key>
@@ -185,7 +185,7 @@
 					<key>SS01</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front USB 3.1 Gen 2 Type-C Port - USB 3.1 Gen 2 Mode (USB C Motherboard Header)</string>
+						<string>USB 3.1 Gen 2 Motherboard Header (Front USB Type-C Port)</string>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>name</key>
@@ -198,7 +198,7 @@
 					<key>SS03</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear USB 3.1 Gen 2 Port (Red) - Top Port (USB 3.1 Gen 2 Mode)</string>
+						<string>USB 3.1 Gen 2 Type-A Top Red Port</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -211,7 +211,7 @@
 					<key>SS04</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear USB 3.1 Gen 2 Port (Red) - Bottom Port (USB 3.1 Gen 2 Mode)</string>
+						<string>USB 3.1 Gen 2 Type-A Bottom Red Port</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -224,7 +224,7 @@
 					<key>SS06</key>
 					<dict>
 						<key>Comment</key>
-						<string>Front Case USB 3.1 Gen 2 Port (USB 3.1 Gen 2 Mode)</string>
+						<string>USB 3.1 Gen 2 Motherboard Header (Front USB Type-A Port)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
@@ -237,7 +237,7 @@
 					<key>SS07</key>
 					<dict>
 						<key>Comment</key>
-						<string>Rear 4 Port USB DAC UP Hub (USB 3.0 Mode)</string>
+						<string>USB 3.0 Type-A 4 Port Hub</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>name</key>
