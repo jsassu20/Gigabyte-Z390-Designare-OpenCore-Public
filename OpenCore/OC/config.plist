@@ -799,7 +799,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>Z390-Designare-USBPorts.kext</string>
+				<string>Z390-Designare-USB-Ports.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -872,7 +872,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
