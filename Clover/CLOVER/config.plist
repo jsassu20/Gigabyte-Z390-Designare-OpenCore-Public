@@ -427,6 +427,74 @@
 		<false/>
 		<key>NoDefaultProperties</key>
 		<false/>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>USB Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 300 Series PCH USB 3.1 Gen 2 xHCI Host Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Communication Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 300 Series PCH HECI Communication Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>SATA Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 300 Series SATA AHCI Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Ethernet Controller</string>
+				<key>model</key>
+				<string>Intel I211 Wired LAN Gigabit Network Connection</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Audio Device</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 300 Series PCH cAVS HD Audio (Realtek ALC 1220)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>SMBus Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 300 Series PCH System Bus Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwCRPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>VGA Compatiple Controller</string>
+				<key>model</key>
+				<string>Intel UHD 630 Desktop Graphics (Headless IGPU)</string>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -1139,6 +1207,13 @@
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Memory</key>
+		<dict>
+			<key>Channels</key>
+			<integer>2</integer>
+			<key>SlotCount</key>
+			<integer>4</integer>
+		</dict>
 		<key>PlatformFeature</key>
 		<string>0x20</string>
 		<key>ProductName</key>
