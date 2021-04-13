@@ -195,7 +195,7 @@
 		<key>StrictHibernate</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>0</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
