@@ -1108,43 +1108,41 @@
 		<key>#Version</key>
 		<string>1.0</string>
 		<key>BiosReleaseDate</key>
-		<string>01/06/2021</string>
+		<string>01/05/2021</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MP71.88Z.F000.B00.2101062036</string>
+		<string>IM191.88Z.F000.B00.2101051926</string>
 		<key>Board-ID</key>
-		<string>Mac-27AD2F918AE68F61</string>
+		<string>Mac-AA95B1DDAB278B95</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>MacPro7,1</string>
+		<string>iMac19,1</string>
 		<key>ChassisAssetTag</key>
-		<string></string>
+		<string>Asset Tag#</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x7</string>
+		<string>0xD</string>
 		<key>EfiVersion</key>
 		<string>1554.80.3.0.0</string>
 		<key>Family</key>
-		<string>MacPro</string>
+		<string>iMac</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFDAFF066</string>
+		<string>0xFD8FF576</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFFFFFF7F</string>
+		<string>0xFFDFFF7F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>NoRomInfo</key>
-		<true/>
 		<key>PlatformFeature</key>
-		<string>0x0</string>
+		<string>0x20</string>
 		<key>ProductName</key>
-		<string>MacPro7,1</string>
+		<string>iMac19,1</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
