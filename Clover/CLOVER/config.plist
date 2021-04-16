@@ -1263,13 +1263,6 @@
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Memory</key>
-		<dict>
-			<key>Channels</key>
-			<integer>2</integer>
-			<key>SlotCount</key>
-			<integer>4</integer>
-		</dict>
 		<key>PlatformFeature</key>
 		<string>0x20</string>
 		<key>ProductName</key>

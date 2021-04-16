@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Adds ambient light sensor (_SB.ALS0) in to system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Proper AMD Polaris (_SB.PCI0.PEG0.GFX0) system configuration mapping.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Broadcom BCM94360CD (_SB.PCI0.RP04.ARPT)  wireless card system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Adds BUS0 (_SB.PCI0.SBUS.BUS0) device to the system bus (SMBus) device configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Correct settings information for the DMAC (_SB.PCI0.DMAC)  controller.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Allows spoofing information into SSD and DSDT to clean up PCIe info.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,7 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Adds missing EC (_SB.PCI0.LPCB.EC) device which is needed to boot the system properly.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -64,7 +64,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Corrects settings information for the FWHD device system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -72,7 +72,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Mapps (_SB.PCI0.RP02.DS05) (Intel I211 Gigabit Lan Controller) mapping and information.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -80,7 +80,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fixes IRQ (_SB.PCI0.LPCB.HPET._CRS) conflicts in system configuration (_CRS to XCRS patch needs to be active).</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -88,7 +88,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Mapps (_SB.PCI0) as MCHC in device configuration and proper device information.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -96,7 +96,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fixes NVME (_SB.PCI0.RP17.NVME) and (_SB.PCI0.PEG1.NVME) solid state drive mapping and information.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -104,7 +104,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fixes Intel 300 series motherboard NVRAM (_SB.PCI0.LPCB.PMCR) functionality.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -112,7 +112,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Adds Thermal Management (_SB.PCI0.PCHT) device informmation to system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -120,7 +120,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fixes power management mapping (_SB.PR00) for Intel Core i7-8700 CPU.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -128,15 +128,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Adds PNLF (_SB.PCI0.IGPU.PNLF) for proper screen backlight functionality.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PNLFCFL.aml</string>
+				<string>SSDT-PNLF.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fixes system clock (_SB.PCI0.LPCB.RTC0) issues between macOS and Windows.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -144,7 +144,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Mapps (_SB.PCI0.SRAM) system memory controller and adds correct options in system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -152,7 +152,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fixes Alpine Ridge Thunderbolt 3 (_SB.PCI0.RP21.USPB.NHI0) add in card and enumerates Thunderbolt 3 ports.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -160,7 +160,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fixes Titan Ridge Thunderbolt 3 (_SB.PCI0.RP05.USPB.NHI0) built in controller and enumerates Thunderbolt 3 ports.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -168,7 +168,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Adds USB power settings levels in macOS USB (_SB.PCI0.XHC) and (_SB.USBX) controller functionality.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -176,7 +176,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Mapps out USB host controller (_SB.PCI0.XSPI) and reports proper information options to system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -669,13 +669,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>FakePCIID.kext</string>
+				<string>DisplayIcon.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FakePCIID</string>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -687,13 +687,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>FakePCIID_Intel_I225-V.kext</string>
+				<string>FakePCIID.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/FakePCIID</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
