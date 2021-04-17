@@ -20,21 +20,21 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "XSPI", 0x001F0005)
                 "AAPL,slot-name", 
                 "Built In", 
                 "model", 
-                Buffer (0x42)
+                Buffer ()
                 {
-                    "Intel Canon Lake 300 Series PCH SPI Serial Bus Chipset Controller"
+                    "Intel Canon Lake 11 Series PCH SPI Serial Bus Chipset Controller"
                 }, 
 
                 "name", 
-                Buffer ()
+                Buffer (0x2F)
                 {
                     "Intel Canon Lake Serial Bus Chipset Controller"
                 }, 
 
                 "device_type", 
-                Buffer (0x17)
+                Buffer ()
                 {
-                    "USB Chipset Controller"
+                    "Chipset Controller"
                 }, 
 
                 "pci-device-hidden", 

@@ -1,7 +1,8 @@
 DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
-    
+    External (_SB_.PCI0.SRAM, DeviceObj)
+
     Device (_SB.PCI0.SRAM)
     {
         Name (_ADR, 0x00140002)  // _ADR: Address
@@ -9,37 +10,42 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
         {
             If ((Arg2 == Zero))
             {
-                Return (Buffer ()
+                Return (Buffer (One)
                 {
                      0x03                                             // .
                 })
             }
-            Return (Package ()
+
+            Return (Package (0x0C)
             {
                 "AAPL,slot-name", 
                 "Built In", 
                 "model", 
                 Buffer ()
                 {
-                    "Intel Cannon Lake 300 Series PCH Shared System RAM Controller"
+                    "Intel Cannon Lake 11 Series Chipset PCH Shared System RAM Controller"
                 }, 
+
                 "name", 
                 Buffer ()
                 {
-                    "Intel Canon Lake PCH Shared System RAM Controller"
+                    "Intel Canon Lake Shared System RAM Controller"
                 }, 
+
                 "device_type", 
-                Buffer ()
+                Buffer (0x16)
                 {
                     "RAM Memory Controller"
                 }, 
+
                 "device-id", 
-                Buffer ()
+                Buffer (0x04)
                 {
-                     0x6F, 0xA3, 0x00, 0x00                           // ....
+                     0x6F, 0xA3, 0x00, 0x00                           // o...
                 }, 
+
                 "compatible", 
-                Buffer ()
+                Buffer (0x0D)
                 {
                     "pci8086,a36f"
                 }
@@ -47,3 +53,4 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
         }
     }
 }
+

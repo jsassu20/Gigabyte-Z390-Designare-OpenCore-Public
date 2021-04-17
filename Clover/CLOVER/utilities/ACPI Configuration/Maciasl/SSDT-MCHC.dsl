@@ -21,9 +21,9 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "MCHC", 0x00000000)
                 "AAPL,slot-name", 
                 "Built In", 
                 "model", 
-                Buffer (0x30)
+                Buffer ()
                 {
-                    "Intel Cannon Lake 300 Series PCI Express Bridge"
+                    "Intel Cannon Lake 11 Series Chipset PCH PCI Express Bridge"
                 }, 
 
                 "name", 
@@ -33,9 +33,9 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "MCHC", 0x00000000)
                 }, 
 
                 "device_type", 
-                Buffer (0x13)
+                Buffer ()
                 {
-                    "PCI Express Bridge"
+                    "PCI Express Controller"
                 }, 
 
                 "device-id", 

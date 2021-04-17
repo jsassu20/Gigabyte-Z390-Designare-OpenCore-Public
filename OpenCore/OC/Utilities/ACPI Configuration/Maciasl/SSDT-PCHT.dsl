@@ -21,9 +21,9 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "PCHT", 0x00000000)
                 "AAPL,slot-name", 
                 "Built In", 
                 "model", 
-                Buffer (0x34)
+                Buffer ()
                 {
-                    "Intel Cannon Lake 300 Series PCH Thermal Controller"
+                    "Intel Cannon Lake 11 Series Chipset PCH Thermal Controller"
                 }, 
 
                 "name", 
