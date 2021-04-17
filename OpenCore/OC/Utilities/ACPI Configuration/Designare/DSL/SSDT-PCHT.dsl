@@ -29,7 +29,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "PCHT", 0x00000000)
                 "name", 
                 Buffer ()
                 {
-                    "Intel Cannon Lake 300 Series PCH Thermal Controller"
+                    "Intel Cannon Lake Thermal Controller"
                 }, 
 
                 "device_type", 
