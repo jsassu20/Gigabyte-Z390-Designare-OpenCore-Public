@@ -22,17 +22,17 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "XSPI", 0x001F0005)
                 "model", 
                 Buffer ()
                 {
-                    "Intel Canon Lake 11 Series PCH SPI Serial Bus Chipset Controller"
+                    "Intel Cannon Lake 11 Series Chipset PCH SPI Serial Bus Chipset Controller"
                 }, 
 
                 "name", 
-                Buffer (0x2F)
+                Buffer ()
                 {
-                    "Intel Canon Lake Serial Bus Chipset Controller"
+                    "Intel Cannon Lake Serial Bus Chipset Controller"
                 }, 
 
                 "device_type", 
-                Buffer ()
+                Buffer (0x13)
                 {
                     "Chipset Controller"
                 }, 
