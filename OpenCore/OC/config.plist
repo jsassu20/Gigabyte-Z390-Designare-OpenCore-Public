@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Broadcom BCM94360CD (_SB.PCI0.RP04.ARPT)  wireless card system configuration.</string>
+				<string>Broadcom BCM94360CD (_SB.PCI0.RP04.ARPT) wireless card system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Correct settings information for the DMAC (_SB.PCI0.DMAC)  controller.</string>
+				<string>Correct settings information for the DMAC (_SB.PCI0.DMAC) controller.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Allows spoofing information into SSD and DSDT to clean up PCIe info.</string>
+				<string>Allows spoofing information into SSDT and DSDT to clean up PCIe info.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
