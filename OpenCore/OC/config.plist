@@ -64,7 +64,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Corrects settings information for the FWHD device system configuration.</string>
+				<string>Corrects settings information for the FWHD (_SB.PCI0.FWHD) device in system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -112,7 +112,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Adds Thermal Management (_SB.PCI0.PCHT) device informmation to system configuration.</string>
+				<string>Adds Thermal Management (_SB.PCI0.PCHT) device information to system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -152,7 +152,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fixes Alpine Ridge Thunderbolt 3 (_SB.PCI0.RP21.USPB.NHI0) add in card and enumerates Thunderbolt 3 ports.</string>
+				<string>Fixes Alpine Ridge Thunderbolt 3 (_SB.PCI0.RP21.UPSB.NHI0) add in card and enumerates Thunderbolt 3 ports.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -160,7 +160,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fixes Titan Ridge Thunderbolt 3 (_SB.PCI0.RP05.USPB.NHI0) built in controller and enumerates Thunderbolt 3 ports.</string>
+				<string>Fixes Titan Ridge Thunderbolt 3 (_SB.PCI0.RP05.UPSB.NHI0) built in controller and enumerates Thunderbolt 3 ports.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -176,7 +176,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Mapps out USB host controller (_SB.PCI0.XSPI) and reports proper information options to system configuration.</string>
+				<string>Mapps out USB hub (_SB.PCI0.XSPI) chipset and reports proper information options to system configuration.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
