@@ -1,18 +1,18 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "ARPT", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE", "D05D", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
-    External (_SB_.PCI0.RP04, DeviceObj)
-    External (_SB_.PCI0.RP04.ARPT, DeviceObj)
-    External (_SB_.PCI0.RP04.PXSX, DeviceObj)
+    External (_SB_.PCI0.RP02, DeviceObj)
+    External (_SB_.PCI0.RP02.GLAN, DeviceObj)
+    External (_SB_.PCI0.RP02.PXSX, DeviceObj)
 
-    Scope (_SB.PCI0.RP04)
+    Scope (_SB.PCI0.RP02)
     {
         Scope (PXSX)
         {
             Name (_STA, Zero)  // _STA: Status
         }
 
-        Device (ARPT)
+        Device (GLAN)
         {
             Name (_ADR, Zero)  // _ADR: Address
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
@@ -28,35 +28,35 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "ARPT", 0x00000000)
                 Return (Package (0x0C)
                 {
                     "AAPL,slot-name", 
-                    "PCIe x1 Slot 2", 
+                    "Built In", 
                     "model", 
-                    Buffer ()
+                    Buffer (0x31)
                     {
-                        "Broadcom BCM94360CD 802.11 ac/n/g/ab/a Wireless Network Card"
+                        "Intel I211 Wired LAN Gigabit Ethernet Controller"
                     }, 
 
                     "name", 
                     Buffer ()
                     {
-                        "Apple Airport Extreme Wireless Network Card"
+                        "Intel I211 Gigabit Ethernet Controller"
                     }, 
 
                     "device_type", 
-                    Buffer ()
+                    Buffer (0x14)
                     {
-                        "Apple Airport Extreme"
+                        "Ethernet Controller"
                     }, 
 
                     "device-id", 
                     Buffer (0x04)
                     {
-                         0xA0, 0x43, 0x00, 0x00                           // .C..
+                         0x39, 0x15, 0x00, 0x00                           // 9...
                     }, 
 
                     "compatible", 
                     Buffer (0x0D)
                     {
-                        "pci14e4,43a0"
+                        "pci8086,1539"
                     }
                 })
             }

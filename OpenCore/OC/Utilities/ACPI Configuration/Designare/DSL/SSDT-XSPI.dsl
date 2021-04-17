@@ -1,6 +1,6 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "XSPI", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE", "XSPI", 0x001F0005)
 {
-    External (_SB_.PCI0, DeviceObj)
+    External (_SB_.PCI0.XSPI, DeviceObj)
 
     Device (_SB.PCI0.XSPI)
     {
@@ -15,22 +15,26 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "XSPI", 0x00000000)
                 })
             }
 
-            Return (Package (0x0A)
+            Return (Package ()
             {
                 "AAPL,slot-name", 
-                "Built In", 
-                "name", 
-                "Serial Bus Controller", 
+                "Built In",  
                 "model", 
+                Buffer ()
+                {
+                    "Intel Canon Lake 300 Series PCH SPI Serial Bus Chipset Controller"
+                },
+                
+                "name",
                 Buffer ()
                 {
                     "Intel Canon Lake 300 Series PCH SPI Serial Bus Chipset Controller"
                 }, 
 
                 "device_type", 
-                Buffer (0x16)
+                Buffer ()
                 {
-                    "Serial Bus Controller"
+                    "USB Chipset Controller"
                 }, 
 
                 "pci-device-hidden", 

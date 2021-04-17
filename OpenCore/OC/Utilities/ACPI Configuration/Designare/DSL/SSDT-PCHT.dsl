@@ -1,6 +1,7 @@
 DefinitionBlock ("", "SSDT", 2, "APPLE", "PCHT", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
+    External (_SB_.PCI0.PCHT, DeviceObj)
 
     Device (_SB.PCI0.PCHT)
     {
@@ -26,9 +27,9 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "PCHT", 0x00000000)
                 }, 
 
                 "name", 
-                Buffer (0x28)
+                Buffer ()
                 {
-                    "Intel Canon Lake PCH Thermal Controller"
+                    "Intel Cannon Lake 300 Series PCH Thermal Controller"
                 }, 
 
                 "device_type", 

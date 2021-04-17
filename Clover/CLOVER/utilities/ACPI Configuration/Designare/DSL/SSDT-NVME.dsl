@@ -26,10 +26,10 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                     })
                 }
 
-                Local0 = Package (0x08)
+                Local0 = Package ()
                     {
                         "AAPL,slot-name", 
-                        Buffer ()
+                        Buffer (0x0A)
                         {
                             "M.2M Slot"
                         }, 
@@ -38,18 +38,24 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                         Buffer (One)
                         {
                              0x00                                             // .
+                        },
+                        
+                        "device_type", 
+                        Buffer ()
+                        {
+                             "NVM Express Controller"                                             // .
                         }, 
 
                         "name", 
-                        Buffer (0x3A)
+                        Buffer ()
                         {
-                            "Western Digital Black SN750 M.2 NVME Solid State Drive #1"
+                            "Western Digital Black SN750 M.2 NVM Express Solid State Drive"
                         }, 
 
                         "model", 
-                        Buffer (0x3A)
+                        Buffer ()
                         {
-                            "Western Digital Black SN750 M.2 NVME Solid State Drive #1"
+                            "Western Digital Black SN750 M.2 NVM Express Solid State Drive #1"
                         }
                     }
                 DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
@@ -78,10 +84,10 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                     })
                 }
 
-                Local0 = Package (0x08)
+                Local0 = Package ()
                     {
                         "AAPL,slot-name", 
-                        Buffer ()
+                        Buffer (0x0A)
                         {
                             "M.2P Slot"
                         }, 
@@ -90,18 +96,24 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                         Buffer (One)
                         {
                              0x00                                             // .
+                        },
+                        
+                        "device_type", 
+                        Buffer ()
+                        {
+                             "NVM Express Controller"                                             // .
                         }, 
 
                         "name", 
-                        Buffer (0x3A)
+                        Buffer ()
                         {
-                            "Western Digital Black SN750 M.2 NVME Solid State Drive #2"
+                            "Western Digital Black SN750 M.2 NVM Express Solid State Drive"
                         }, 
 
                         "model", 
-                        Buffer (0x3A)
+                        Buffer ()
                         {
-                            "Western Digital Black SN750 M.2 NVME Solid State Drive #2"
+                            "Western Digital Black SN750 M.2 NVM Express Solid State Drive #2"
                         }
                     }
                 DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))

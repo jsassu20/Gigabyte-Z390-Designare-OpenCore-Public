@@ -464,9 +464,11 @@
 				<key>AAPL,slot-name</key>
 				<string>Built In</string>
 				<key>device_type</key>
-				<string>USB Controller</string>
+				<string>USB 3.1 Host Controller</string>
 				<key>model</key>
-				<string>Intel Cannon Lake 300 Series PCH USB 3.1 Gen 2 xHCI Host Controller</string>
+				<string>Intel Cannon Lake 300 Series PCH USB 3.1 xHCI Serial Bus Host Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake USB 3.1 Serial Bus Host Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<dict>
@@ -475,16 +477,20 @@
 				<key>device_type</key>
 				<string>Communication Controller</string>
 				<key>model</key>
-				<string>Intel Cannon Lake 300 Series PCH HECI Communication Controller</string>
+				<string>Intel Cannon Lake 300 Series PCH IMEI Communication Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake IMEI Communication Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Built In</string>
 				<key>device_type</key>
-				<string>SATA Controller</string>
+				<string>Serial ATA Controller</string>
 				<key>model</key>
-				<string>Intel Cannon Lake 300 Series SATA AHCI Controller</string>
+				<string>Intel Cannon Lake 300 Series Serial ATA AHCI Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake Serial ATA AHCI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
 			<dict>
@@ -493,7 +499,9 @@
 				<key>device_type</key>
 				<string>Ethernet Controller</string>
 				<key>model</key>
-				<string>Intel I211 Wired LAN Gigabit Network Connection</string>
+				<string>Intel I211 Wired LAN Gigabit Ethernet Network Controller</string>
+				<key>name</key>
+				<string>Intel I211 Gigabit Ethernet Network Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
 			<dict>
@@ -502,18 +510,22 @@
 				<key>device_type</key>
 				<string>ISA Bridge</string>
 				<key>model</key>
-				<string>Intel Z390 Chipset LPC/eSPI 300 Series ISA Controller</string>
+				<string>Intel Z390 300 Series Chipset LPC/eSPI ISA Bridge Controller</string>
+				<key>name</key>
+				<string>Intel Z390 300 LPC/eSPI ISA Bridge Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Built In</string>
 				<key>device_type</key>
-				<string>Audio Device</string>
+				<string>Multimedia Controller</string>
 				<key>layout-id</key>
 				<data>EAAAAA==</data>
 				<key>model</key>
-				<string>Intel Cannon Lake 300 Series PCH cAVS HD Audio (Realtek ALC 1220)</string>
+				<string>Intel Cannon Lake 300 Series PCH cAVS High Definition Audio DAC Controller (Realtek ALC 1220)</string>
+				<key>name</key>
+				<string>Intel Cannon Lake cAVS High Definition Audio DAC Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
 			<dict>
@@ -523,6 +535,8 @@
 				<string>SMBus Controller</string>
 				<key>model</key>
 				<string>Intel Cannon Lake 300 Series PCH System Bus Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake System Bus Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
 			<dict>
@@ -531,7 +545,9 @@
 				<key>device_type</key>
 				<string>Ethernet Controller</string>
 				<key>model</key>
-				<string>Intel I219-V7 Gigabit LAN Wired Ethernet Controller</string>
+				<string>Intel I219-V7 Wired LAN Gigabit Ethernet Network Controller</string>
+				<key>name</key>
+				<string>Intel I219-V7 Gigabit Ethernet Network Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -540,9 +556,11 @@
 				<key>AAPL,slot-name</key>
 				<string>Built In</string>
 				<key>device_type</key>
-				<string>VGA Compatiple Controller</string>
+				<string>Display Controller</string>
 				<key>model</key>
-				<string>Intel UHD 630 Integrated Desktop Graphics (IGPU)</string>
+				<string>Intel UHD Graphics 630 Integrated High Definition Graphics (IGPU)</string>
+				<key>name</key>
+				<string>Intel UHD Graphics 630</string>
 			</dict>
 		</dict>
 		<key>USB</key>
