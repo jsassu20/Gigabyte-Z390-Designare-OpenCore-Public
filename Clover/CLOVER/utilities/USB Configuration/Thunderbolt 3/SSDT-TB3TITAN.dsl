@@ -66,7 +66,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                             "AAPL,slot-name", 
                             Buffer ()
                             {
-                                "Thunderbolt 3"
+                                "Built In"
                             }, 
 
                             "built-in", 
@@ -130,7 +130,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                                 "AAPL,slot-name", 
                                 Buffer ()
                                 {
-                                    "Thunderbolt 3"
+                                    "Built In"
                                 }, 
 
                                 "built-in", 
@@ -176,23 +176,23 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                                     "AAPL,slot-name", 
                                     Buffer ()
                                     {
-                                        "Thunderbolt 3"
+                                        "Built In"
                                     }, 
 
                                     "name", 
-                                    Buffer ()
+                                    Buffer (0x37)
                                     {
                                         "Intel JHL7540 Titan Ridge Thunderbolt 3 NHI Controller"
                                     }, 
 
                                     "model", 
-                                    Buffer ()
+                                    Buffer (0x37)
                                     {
                                         "Intel JHL7540 Titan Ridge Thunderbolt 3 NHI Controller"
                                     }, 
 
                                     "device_type", 
-                                    Buffer ()
+                                    Buffer (0x19)
                                     {
                                         "Thunderbolt 3 Controller"
                                     }, 
@@ -347,7 +347,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                                     "AAPL,slot-name", 
                                     Buffer ()
                                     {
-                                        "Thunderbolt 3"
+                                        "Built In"
                                     }, 
 
                                     "built-in", 
@@ -357,19 +357,19 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                                     }, 
 
                                     "name", 
-                                    Buffer ()
+                                    Buffer (0x39)
                                     {
                                         "Intel JHL7540 Titan Ridge USB 3.1 Type-C Host Controller"
                                     }, 
 
                                     "model", 
-                                    Buffer ()
+                                    Buffer (0x39)
                                     {
                                         "Intel JHL7540 Titan Ridge USB 3.1 Type-C Host Controller"
                                     }, 
 
                                     "device_type", 
-                                    Buffer ()
+                                    Buffer (0x1F)
                                     {
                                         "USB 3.1 Type-C Host Controller"
                                     }, 
