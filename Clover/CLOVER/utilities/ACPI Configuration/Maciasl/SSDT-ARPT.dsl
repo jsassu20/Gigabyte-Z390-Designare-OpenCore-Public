@@ -32,17 +32,17 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "ARPT", 0x00000000)
                     "model", 
                     Buffer ()
                     {
-                        "Broadcom BCM94360CD 802.11 ac/n/g/ab/a Wireless Network Card"
+                        "Broadcom BCM94360CD 802.11 ac/n/g/b/a Wireless Network Card"
                     }, 
 
                     "name", 
-                    Buffer ()
+                    Buffer (0x2C)
                     {
                         "Apple Airport Extreme Wireless Network Card"
                     }, 
 
                     "device_type", 
-                    Buffer ()
+                    Buffer (0x16)
                     {
                         "Apple Airport Extreme"
                     }, 

@@ -21,7 +21,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
                 "AAPL,slot-name", 
                 "Built In", 
                 "model", 
-                Buffer ()
+                Buffer (0x45)
                 {
                     "Intel Cannon Lake 11 Series Chipset PCH Shared System RAM Controller"
                 }, 
@@ -29,7 +29,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
                 "name", 
                 Buffer ()
                 {
-                    "Intel Canon Lake Shared System RAM Controller"
+                    "Intel Cannon Lake Shared System RAM Controller"
                 }, 
 
                 "device_type", 
