@@ -101,13 +101,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					oAqTU1RBUwE=
-					</data>
+					<data>oAqTU1RBUwE=</data>
 					<key>Replace</key>
-					<data>
-					oAqRCv8L//8=
-					</data>
+					<data>oAqRCv8L//8=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -115,13 +111,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
+					<data>U0FUMA==</data>
 					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
+					<data>U0FUQQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -129,13 +121,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
+					<data>SEVDSQ==</data>
 					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
+					<data>SU1FSQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -143,13 +131,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
+					<data>SERBUw==</data>
 					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
+					<data>SERFRg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -157,13 +141,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					JV9DUlM=
-					</data>
+					<data>JV9DUlM=</data>
 					<key>Replace</key>
-					<data>
-					JVhDUlM=
-					</data>
+					<data>JVhDUlM=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -171,13 +151,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					IgABeQA=
-					</data>
+					<data>IgABeQA=</data>
 					<key>Replace</key>
-					<data>
-					IgAAeQA=
-					</data>
+					<data>IgAAeQA=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -185,13 +161,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					IgEAeQA=
-					</data>
+					<data>IgEAeQA=</data>
 					<key>Replace</key>
-					<data>
-					IgAAeQA=
-					</data>
+					<data>IgAAeQA=</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -259,7 +231,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 shikigva=128 agdpmod=pikera watchdog=0 -no_compat_check</string>
+		<string>dart=0 shikigva=128 agdpmod=pikera watchdog=0 -no_compat_check alcid=16</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -357,57 +329,35 @@
 				<key>#Comment</key>
 				<string>This is USB3.0</string>
 				<key>AAPL,clock-id</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>AAPL,current-available</key>
-				<data>
-				sAQ=
-				</data>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				vAI=
-				</data>
+				<data>vAI=</data>
 				<key>AAPL,current-in-sleep</key>
-				<data>
-				6AM=
-				</data>
+				<data>6AM=</data>
 				<key>built-in</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>device_type</key>
 				<string>XHCI</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
 			<dict>
 				<key>built-in</key>
-				<data>
-				AQ==
-				</data>
+				<data>AQ==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1a,0x0)</key>
 			<dict>
 				<key>AAPL,clock-id</key>
-				<data>
-				AQ==
-				</data>
+				<data>AQ==</data>
 				<key>AAPL,current-available</key>
-				<data>
-				sAQ=
-				</data>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				vAI=
-				</data>
+				<data>vAI=</data>
 				<key>AAPL,current-in-sleep</key>
-				<data>
-				6AM=
-				</data>
+				<data>6AM=</data>
 				<key>built-in</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>device_type</key>
 				<string>EHCI</string>
 			</dict>
@@ -425,9 +375,7 @@
 				<key>name</key>
 				<string>AirPort Extreme</string>
 				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
+				<data>axAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</key>
 			<dict>
@@ -440,93 +388,54 @@
 				<key>name</key>
 				<string>AirPort Extreme</string>
 				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
+				<data>axAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
 				<key>AAPL,clock-id</key>
-				<data>
-				Ag==
-				</data>
+				<data>Ag==</data>
 				<key>AAPL,current-available</key>
-				<data>
-				sAQ=
-				</data>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				vAI=
-				</data>
+				<data>vAI=</data>
 				<key>AAPL,current-in-sleep</key>
-				<data>
-				6AM=
-				</data>
+				<data>6AM=</data>
 				<key>built-in</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>device_type</key>
 				<string>EHCI</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>#AAPL00,override-no-connect</key>
-				<data>
-				AP///////wANr2kUAAAAABYWAQSgHxF4AtFFm1lXjisj
-				UFQAAAABAQEBAQEBAQEBAQEBAQEBEhtWclAADDAQZCYA
-				Na4QAAAaDBJWclAADDAQIiYANa4QAAAaAAAA/gA3SlJU
-				OYAxNDBCR0UKAAAAAAAAQTGUAAAAAAEBCiAgAMU=
-				</data>
+				<data>AP///////wANr2kUAAAAABYWAQSgHxF4AtFFm1lXjisjUFQAAAABAQEBAQEBAQEBAQEBAQEBEhtWclAADDAQZCYANa4QAAAaDBJWclAADDAQIiYANa4QAAAaAAAA/gA3SlJUOYAxNDBCR0UKAAAAAAAAQTGUAAAAAAEBCiAgAMU=</data>
 				<key>@0,backlight-control</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,HasLid</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,HasPanel</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,backlight-control</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AwBmAQ==
-				</data>
+				<data>AwBmAQ==</data>
 				<key>class-code</key>
-				<data>
-				AAADAA==
-				</data>
+				<data>AAADAA==</data>
 				<key>device-id</key>
-				<data>
-				ZgEAAA==
-				</data>
+				<data>ZgEAAA==</data>
 				<key>graphic-options</key>
-				<data>
-				DAAAAA==
-				</data>
+				<data>DAAAAA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 4000</string>
 				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
+				<data>axAAAA==</data>
 				<key>vendor-id</key>
-				<data>
-				hoAAAA==
-				</data>
+				<data>hoAAAA==</data>
 			</dict>
 			<key>SecondaryGPU</key>
 			<dict>
 				<key>device-id</key>
-				<data>
-				/////w==
-				</data>
+				<data>/////w==</data>
 			</dict>
 		</dict>
 		<key>#SetIntelBacklight</key>
@@ -551,92 +460,317 @@
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel 8th Gen Core Processor Host Bridge/DRAM Registers</string>
+				<key>name</key>
+				<string>Intel 8th Gen Core Processor Host Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Xeon E3-1200 8th Generation Core Processor PCI Express x16 Controller</string>
+				<key>name</key>
+				<string>Intel 8th Generation Core Processor PCI Express x16 Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x1)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Xeon E3-1200 8th Gen Core Processor PCI Express Controller (x8)</string>
+				<key>name</key>
+				<string>Intel 8th Generation Core Processor PCI Express x8 Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>USB 3.1 Host Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH USB 3.1 xHCI Host Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake USB 3.1 xHCI Host Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Communication Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH HECI Communication Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake HECI Communication Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Serial ATA Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH Serial ATA AHCI Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake Serial ATA AHCI Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH PCI Express Root Port #17</string>
+				<key>name</key>
+				<string>Intel Cannon Lake PCI Express Root Port</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x4)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH PCI Express Root Port #21</string>
+				<key>name</key>
+				<string>Intel Cannon Lake PCI Express Root Port</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x4)/Pci(0x0,0x0)</key>
-			<data>
-			</data>
-			<key>PciRoot(0x0)/Pci(0x1B,0x4)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe x16 Slot 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL6540 Alpine Ridge Thunderbolt 3 Bridge #1</string>
+				<key>name</key>
+				<string>Intel Alpine Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x4)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe x16 Slot 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL6540 Alpine Ridge Thunderbolt 3 Bridge #3</string>
+				<key>name</key>
+				<string>Intel Alpine Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe x16 Slot 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL6540 Alpine Ridge Thunderbolt 3 Bridge #4</string>
+				<key>name</key>
+				<string>Intel Alpine Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x4)/Pci(0x0,0x0)/Pci(0x4,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe x16 Slot 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL6540 Alpine Ridge Thunderbolt 3 Bridge #5</string>
+				<key>name</key>
+				<string>Intel Alpine Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH PCI Express Root Port #1</string>
+				<key>name</key>
+				<string>Intel Cannon Lake PCI Express Root Port</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x1)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH PCI Express Root Port #2</string>
+				<key>name</key>
+				<string>Intel Cannon Lake PCI Express Root Port</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Ethernet Controller</string>
+				<key>model</key>
+				<string>Intel I211 Wired LAN Gigabit Ethernet Network Controller</string>
+				<key>name</key>
+				<string>Intel I211 Gigabit Ethernet Network Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x3)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH PCI Express Root Port #14</string>
+				<key>name</key>
+				<string>Intel Cannon Lake PCI Express Root Port</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x4)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH PCI Express Root Port #5</string>
+				<key>name</key>
+				<string>Intel Cannon Lake PCI Express Root Port</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL7540 Titan Ridge Thunderbolt 3 Bridge #1</string>
+				<key>name</key>
+				<string>Intel Titan Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL7540 Titan Ridge Thunderbolt 3 Bridge #2</string>
+				<key>name</key>
+				<string>Intel Titan Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL7540 Titan Ridge Thunderbolt 3 Bridge #3</string>
+				<key>name</key>
+				<string>Intel Titan Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL7540 Titan Ridge Thunderbolt 3 Bridge #4</string>
+				<key>name</key>
+				<string>Intel Titan Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x4,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt 3</string>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Controller</string>
+				<key>model</key>
+				<string>Intel JHL7540 Titan Ridge Thunderbolt 3 Bridge #5</string>
+				<key>name</key>
+				<string>Intel Titan Ridge Thunderbolt 3 Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>PCI Express Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH PCI Express Root Port #9</string>
+				<key>name</key>
+				<string>Intel Cannon Lake PCI Express Root Port</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>ISA Bridge Controller</string>
+				<key>model</key>
+				<string>Intel Z390 11 Series Chipset PCH LPC/eSPI ISA Bridge</string>
+				<key>name</key>
+				<string>Intel Z390 ISA LPC ISA Bridge Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Multimedia Controller</string>
+				<key>layout-id</key>
+				<integer>16</integer>
+				<key>model</key>
+				<string>Realtek ALC1220 HD Audio (Intel Cannon Lake 11 Series Chipset PCH cAVS Audio)</string>
+				<key>name</key>
+				<string>Realtek ALC1220 HD Audio Codec</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>SMBus Controller</string>
+				<key>model</key>
+				<string>Intel Cannon Lake 11 Series Chipset PCH System Bus Controller</string>
+				<key>name</key>
+				<string>Intel Cannon Lake System Bus Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Ethernet Controller</string>
+				<key>model</key>
+				<string>Intel I219-V7 Wired LAN Gigabit Ethernet Network Controller</string>
+				<key>name</key>
+				<string>Intel I219-V7 Gigabit Ethernet Network Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<data>
-			</data>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwCRPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Display Controller</string>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 High Definition Graphics (Desktop)</string>
+				<key>name</key>
+				<string>Intel UHD Graphics 630</string>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -854,13 +988,9 @@
 		<array>
 			<dict>
 				<key>Find</key>
-				<data>
-				gAeoAqAF
-				</data>
+				<data>gAeoAqAF</data>
 				<key>Replace</key>
-				<data>
-				gAeoAjgE
-				</data>
+				<data>gAeoAjgE</data>
 			</dict>
 		</array>
 		<key>#RadeonDeInit</key>
@@ -876,12 +1006,7 @@
 		<key>EDID</key>
 		<dict>
 			<key>#Custom</key>
-			<data>
-			AP///////wAGECGSAAAAAAASAQOAIRV4CunVmVlTjigmUFQAAAAB
-			AQEBAQEBAQEBAQEBAQEB3iGgcFCEHzAgIFYAS88QAAAY3iGgcFCE
-			HzAgIFYAS88QAAAAAAAA/gBXNjU3RwAxNTRXUDEKAAAA/gAjMz1I
-			ZYSq/wIBCiAgAJo=
-			</data>
+			<data>AP///////wAGECGSAAAAAAASAQOAIRV4CunVmVlTjigmUFQAAAABAQEBAQEBAQEBAQEBAQEB3iGgcFCEHzAgIFYAS88QAAAY3iGgcFCEHzAgIFYAS88QAAAAAAAA/gBXNjU3RwAxNTRXUDEKAAAA/gAjMz1IZYSq/wIBCiAgAJo=</data>
 			<key>#HorizontalSyncPulseWidth</key>
 			<string>0x11</string>
 			<key>#Inject</key>
@@ -915,15 +1040,11 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
+				<data>RXh0ZXJuYWw=</data>
 				<key>MatchOS</key>
 				<string>All</string>
 				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
+				<data>SW50ZXJuYWw=</data>
 			</dict>
 		</array>
 		<key>#FakeCPUID</key>
@@ -939,19 +1060,13 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				SGVhZHBob25lcwA=
-				</data>
+				<data>SGVhZHBob25lcwA=</data>
 				<key>MaskReplace</key>
-				<data>
-				/////wAAAAAAAAA=
-				</data>
+				<data>/////wAAAAAAAAA=</data>
 				<key>Name</key>
 				<string>VoodooHDA</string>
 				<key>Replace</key>
-				<data>
-				VGVsZXBob25lcwA=
-				</data>
+				<data>VGVsZXBob25lcwA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -969,29 +1084,21 @@
 				<key>Comment</key>
 				<string>Make all drives to be internal</string>
 				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
+				<data>RXh0ZXJuYWw=</data>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
+				<data>SW50ZXJuYWw=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>TRIM function for non-Apple SSDs</string>
 				<key>Find</key>
-				<data>
-				QVBQTEUgU1NEAA==
-				</data>
+				<data>QVBQTEUgU1NEAA==</data>
 				<key>Name</key>
 				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAA==
-				</data>
+				<data>AAAAAAAAAAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -999,19 +1106,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				AAQAAAQDAAAAAQAAIQMCBAQAAAAUAgAAAAEAAAAABAMQ
-				AAAAEAAAAAABAAAAAAAB
-				</data>
+				<data>AAQAAAQDAAAAAQAAIQMCBAQAAAAUAgAAAAEAAAAABAMQAAAAEAAAAAABAAAAAAAB</data>
 				<key>MatchOS</key>
 				<string>10.9,10.10,10.11</string>
 				<key>Name</key>
 				<string>AMD6000Controller</string>
 				<key>Replace</key>
-				<data>
-				BAAAABQCAAAAAQAAAAAEBAAEAAAEAwAAAAEAABECAQUA
-				AAAAAAAAAAAAAAAAAAAA
-				</data>
+				<data>BAAAABQCAAAAAQAAAAAEBAAEAAAEAwAAAAEAABECAQUAAAAAAAAAAAAAAAAAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1019,17 +1120,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				SEQgNnh4eA==
-				</data>
+				<data>SEQgNnh4eA==</data>
 				<key>MatchOS</key>
 				<string>10.12,10.13</string>
 				<key>Name</key>
 				<string>AMD6000Controller</string>
 				<key>Replace</key>
-				<data>
-				SEQgNjQ1MA==
-				</data>
+				<data>SEQgNjQ1MA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1037,13 +1134,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				VUiJ
-				</data>
+				<data>VUiJ</data>
 				<key>FindMask</key>
-				<data>
-				AAAA
-				</data>
+				<data>AAAA</data>
 				<key>Name</key>
 				<string>com.apple.kext.AMDSupport</string>
 				<key>Procedure</key>
@@ -1051,9 +1144,7 @@
 				<key>RangeFind</key>
 				<integer>10</integer>
 				<key>Replace</key>
-				<data>
-				sAHD
-				</data>
+				<data>sAHD</data>
 			</dict>
 		</array>
 		<key>AppleIntelCPUPM</key>
@@ -1080,9 +1171,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				g/sPDw==
-				</data>
+				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -1090,9 +1179,7 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>
-				g/s/Dw==
-				</data>
+				<data>g/s/Dw==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1100,9 +1187,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				g+MP0w==
-				</data>
+				<data>g+MP0w==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -1110,9 +1195,7 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>
-				g+M/0w==
-				</data>
+				<data>g+M/0w==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1120,9 +1203,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				g/sPDw==
-				</data>
+				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -1130,9 +1211,7 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>
-				g/s/Dw==
-				</data>
+				<data>g/s/Dw==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1140,9 +1219,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				g/8PDw==
-				</data>
+				<data>g/8PDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -1150,9 +1227,7 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>
-				g/8/Dw==
-				</data>
+				<data>g/8/Dw==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1160,9 +1235,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				g/sPDw==
-				</data>
+				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -1170,9 +1243,7 @@
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
-				<data>
-				g/s/Dw==
-				</data>
+				<data>g/s/Dw==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1180,9 +1251,7 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				g/kPDw==
-				</data>
+				<data>g/kPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
@@ -1190,9 +1259,7 @@
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>
-				g/k/Dw==
-				</data>
+				<data>g/k/Dw==</data>
 			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
