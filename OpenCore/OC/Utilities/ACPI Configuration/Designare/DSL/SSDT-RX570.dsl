@@ -268,7 +268,7 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "RX570", 0x00000000)
                         "hda-gfx", 
                         Buffer (0x0A)
                         {
-                            "onboard-2"
+                            "onboard-1"
                         }
                     }
                 DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
@@ -331,7 +331,7 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "RX570", 0x00000000)
                         "hda-gfx", 
                         Buffer (0x0A)
                         {
-                            "onboard-2"
+                            "onboard-1"
                         }
                     }
                 DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
