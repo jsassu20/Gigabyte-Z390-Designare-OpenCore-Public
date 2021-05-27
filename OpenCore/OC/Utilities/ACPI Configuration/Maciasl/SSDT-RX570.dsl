@@ -233,7 +233,7 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "RX570", 0x00000000)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                Local0 = Package ()
+                Local0 = Package (0x0C)
                     {
                         "built-in", 
                         Buffer (One)
@@ -242,13 +242,13 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "RX570", 0x00000000)
                         }, 
 
                         "AAPL,slot-name", 
-                        Buffer (0x10)
-                        {
-                            "PCIe x16 Slot 1"
-                        },
-                        
-                        "name", 
                         Buffer ()
+                        {
+                            "PCIe x16 Slot"
+                        }, 
+
+                        "name", 
+                        Buffer (0x12)
                         {
                             "AMD Radeon RX 570"
                         }, 
@@ -268,7 +268,7 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "RX570", 0x00000000)
                         "hda-gfx", 
                         Buffer (0x0A)
                         {
-                            "onboard-2"
+                            "onboard-1"
                         }
                     }
                 DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
@@ -299,9 +299,9 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "RX570", 0x00000000)
                         }, 
 
                         "AAPL,slot-name", 
-                        Buffer (0x10)
+                        Buffer ()
                         {
-                            "PCIe x16 Slot 1"
+                            "PCIe x16 Slot"
                         }, 
 
                         "layout-id", 
@@ -331,7 +331,7 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "RX570", 0x00000000)
                         "hda-gfx", 
                         Buffer (0x0A)
                         {
-                            "onboard-2"
+                            "onboard-1"
                         }
                     }
                 DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))

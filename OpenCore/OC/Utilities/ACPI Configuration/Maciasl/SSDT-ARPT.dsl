@@ -25,20 +25,20 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "ARPT", 0x00000000)
                     })
                 }
 
-                Return (Package (0x0C)
+                Return (Package ()
                 {
                     "AAPL,slot-name", 
-                    "PCIe x1 Slot 2", 
+                    "PCIe x1 Slot", 
                     "model", 
                     Buffer ()
                     {
-                        "Broadcom BCM94360CD 802.11 ac/n/g/b/a Wireless Network Card"
+                        "Apple AirPort Extreme (Broadcom BCM94360CD 802.11 AC Wireless Network Adapter)"
                     }, 
 
                     "name", 
                     Buffer (0x2C)
                     {
-                        "Apple Airport Extreme Wireless Network Card"
+                        "Apple Airport Extreme Wireless Network Adapter"
                     }, 
 
                     "device_type", 

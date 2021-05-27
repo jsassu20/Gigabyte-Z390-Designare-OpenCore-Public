@@ -6,9 +6,8 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
     External (_SB_.PCI0.RP09.PXSX, DeviceObj)
     External (_SB_.PCI0.RP17, DeviceObj)
     External (_SB_.PCI0.RP17.PXSX, DeviceObj)
-    External (DTGP, MethodObj)    // 5 Arguments
 
-    Scope (\_SB.PCI0.PEG1)
+    Scope (_SB.PCI0.PEG1)
     {
         Scope (PEGP)
         {
@@ -28,44 +27,44 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                     })
                 }
 
-                Local0 = Package (0x0A)
+                Return (Package (0x0C)
+                {
+                    "AAPL,slot-name", 
+                    "M.2 S Slot", 
+                    "model", 
+                    Buffer ()
                     {
-                        "AAPL,slot-name", 
-                        Buffer ()
-                        {
-                            "PCIe x16 Slot 2"
-                        }, 
+                        "Kingston SA2000/500G M.2 x4 NVME Solid State Storage"
+                    }, 
 
-                        "built-in", 
-                        Buffer (One)
-                        {
-                             0x00                                             // .
-                        }, 
+                    "name", 
+                    Buffer ()
+                    {
+                        "Kingston SA2000 NVME Solid SSD"
+                    }, 
 
-                        "device_type", 
-                        Buffer ()
-                        {
-                            "NVMExpress Controller"
-                        }, 
+                    "device_type", 
+                    Buffer ()
+                    {
+                        "NVM Express Controller"
+                    }, 
 
-                        "name", 
-                        Buffer ()
-                        {
-                            "Western Digital Black SN750 500GB NVME SSD"
-                        }, 
+                    "device-id", 
+                    Buffer (0x04)
+                    {
+                         0x06, 0x50, 0x00, 0x00                           // .P..
+                    }, 
 
-                        "model", 
-                        Buffer ()
-                        {
-                            "Western Digital Black SN750 500GB M.2 NVMExpress Solid State Drive"
-                        }
+                    "compatible", 
+                    Buffer (0x0D)
+                    {
+                        "pci2646,5006"
                     }
-                DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
-                Return (Local0)
+                })
             }
         }
     }
-
+    
     Scope (\_SB.PCI0.RP09)
     {
         Scope (PXSX)
@@ -86,44 +85,44 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                     })
                 }
 
-                Local0 = Package (0x0A)
+                Return (Package (0x0C)
+                {
+                    "AAPL,slot-name", 
+                    "M.2M Slot", 
+                    "model", 
+                    Buffer ()
                     {
-                        "AAPL,slot-name", 
-                        Buffer ()
-                        {
-                            "M.2M Slot"
-                        }, 
+                        "Western Digital WDS500G3X0C M.2 x4 NVME Solid State Drive"
+                    }, 
 
-                        "built-in", 
-                        Buffer (One)
-                        {
-                             0x00                                             // .
-                        }, 
+                    "name", 
+                    Buffer ()
+                    {
+                        "Western Digital Black SN750 NVME SSD"
+                    }, 
 
-                        "device_type", 
-                        Buffer ()
-                        {
-                            "NVMExpress Controller"
-                        }, 
+                    "device_type", 
+                    Buffer ()
+                    {
+                        "NVM Express Controller"
+                    }, 
 
-                        "name", 
-                        Buffer ()
-                        {
-                            "Western Digital Black SN750 500GB NVME SSD"
-                        }, 
+                    "device-id", 
+                    Buffer (0x04)
+                    {
+                         0x06, 0x50, 0x00, 0x00                           // .P..
+                    }, 
 
-                        "model", 
-                        Buffer ()
-                        {
-                            "Western Digital Black SN750 500GB M.2 NVMExpress Solid State Drive"
-                        }
+                    "compatible", 
+                    Buffer (0x0D)
+                    {
+                        "pci15b7,5006"
                     }
-                DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
-                Return (Local0)
+                })
             }
         }
     }
-    
+
     Scope (\_SB.PCI0.RP17)
     {
         Scope (PXSX)
@@ -144,40 +143,40 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                     })
                 }
 
-                Local0 = Package (0x0A)
+                Return (Package (0x0C)
+                {
+                    "AAPL,slot-name", 
+                    "M.2P Slot", 
+                    "model", 
+                    Buffer ()
                     {
-                        "AAPL,slot-name", 
-                        Buffer ()
-                        {
-                            "M.2P Slot"
-                        }, 
+                        "Western Digital WDS500G3X0C M.2 x4 NVME Solid State Drive"
+                    }, 
 
-                        "built-in", 
-                        Buffer (One)
-                        {
-                             0x00                                             // .
-                        }, 
+                    "name", 
+                    Buffer ()
+                    {
+                        "Western Digital Black SN750 NVME SSD"
+                    }, 
 
-                        "device_type", 
-                        Buffer ()
-                        {
-                            "NVMExpress Controller"
-                        }, 
+                    "device_type", 
+                    Buffer ()
+                    {
+                        "NVM Express Controller"
+                    }, 
 
-                        "name", 
-                        Buffer ()
-                        {
-                            "Western Digital Black SN750 500GB NVME SSD"
-                        }, 
+                    "device-id", 
+                    Buffer (0x04)
+                    {
+                         0x06, 0x50, 0x00, 0x00                           // .P..
+                    }, 
 
-                        "model", 
-                        Buffer ()
-                        {
-                            "Western Digital Black SN750 500GB M.2 NVMExpress Solid State Drive"
-                        }
+                    "compatible", 
+                    Buffer (0x0D)
+                    {
+                        "pci15b7,5006"
                     }
-                DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
-                Return (Local0)
+                })
             }
         }
     }
