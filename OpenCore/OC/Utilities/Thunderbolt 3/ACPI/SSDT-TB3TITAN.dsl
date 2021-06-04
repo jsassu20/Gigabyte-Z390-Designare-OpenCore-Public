@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "TB3TITAN", 0x00000000)
 {
     External (_SB_.PCI0.RP05, DeviceObj)
     External (_SB_.PCI0.RP05.PXSX, DeviceObj)
@@ -64,7 +64,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                     Local0 = Package (0x06)
                         {
                             "AAPL,slot-name", 
-                            Buffer ()
+                            Buffer (0x09)
                             {
                                 "Built In"
                             }, 
@@ -128,7 +128,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                         Local0 = Package (0x06)
                             {
                                 "AAPL,slot-name", 
-                                Buffer ()
+                                Buffer (0x09)
                                 {
                                     "Built In"
                                 }, 
@@ -174,7 +174,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                             Local0 = Package (0x11)
                                 {
                                     "AAPL,slot-name", 
-                                    Buffer ()
+                                    Buffer (0x09)
                                     {
                                         "Built In"
                                     }, 
@@ -345,7 +345,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3TITAN", 0x00000000)
                             Local0 = Package (0x18)
                                 {
                                     "AAPL,slot-name", 
-                                    Buffer ()
+                                    Buffer (0x09)
                                     {
                                         "Built In"
                                     }, 

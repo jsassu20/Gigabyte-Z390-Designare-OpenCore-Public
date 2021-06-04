@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "SRAM", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.SRAM, DeviceObj)
@@ -27,7 +27,7 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
                 }, 
 
                 "name", 
-                Buffer ()
+                Buffer (0x2F)
                 {
                     "Intel Cannon Lake Shared System RAM Controller"
                 }, 
@@ -50,6 +50,18 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "SRAM", 0x00000000)
                     "pci8086,a36f"
                 }
             })
+        }
+
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0F)
+            }
+            Else
+            {
+                Return (Zero)
+            }
         }
     }
 }

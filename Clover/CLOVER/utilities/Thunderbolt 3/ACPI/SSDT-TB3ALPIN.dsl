@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3ALPIN", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "TB3ALPIN", 0x00000000)
 {
     External (_SB_.PCI0.RP21, DeviceObj)
     External (_SB_.PCI0.RP21.PXSX, DeviceObj)
@@ -64,9 +64,9 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3ALPIN", 0x00000000)
                     Local0 = Package (0x06)
                         {
                             "AAPL,slot-name", 
-                            Buffer (0x0B)
+                            Buffer (0x0D)
                             {
-                                "PCIe x16_3"
+                                "PCIe x4 Slot"
                             }, 
 
                             "built-in", 
@@ -128,9 +128,9 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3ALPIN", 0x00000000)
                         Local0 = Package (0x06)
                             {
                                 "AAPL,slot-name", 
-                                Buffer (0x0B)
+                                Buffer (0x0D)
                                 {
-                                    "PCIe x16_3"
+                                    "PCIe x4 Slot"
                                 }, 
 
                                 "built-in", 
@@ -174,25 +174,25 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3ALPIN", 0x00000000)
                             Local0 = Package (0x11)
                                 {
                                     "AAPL,slot-name", 
-                                    Buffer ()
+                                    Buffer (0x0D)
                                     {
-                                        "PCIe x16 Slot 3"
+                                        "PCIe x4 Slot"
                                     }, 
 
                                     "name", 
-                                    Buffer ()
+                                    Buffer (0x38)
                                     {
                                         "Intel JHL6540 Alpine Ridge Thunderbolt 3 NHI Controller"
                                     }, 
 
                                     "model", 
-                                    Buffer ()
+                                    Buffer (0x38)
                                     {
                                         "Intel JHL6540 Alpine Ridge Thunderbolt 3 NHI Controller"
                                     }, 
 
                                     "device_type", 
-                                    Buffer ()
+                                    Buffer (0x19)
                                     {
                                         "Thunderbolt 3 Controller"
                                     }, 
@@ -346,9 +346,9 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3ALPIN", 0x00000000)
                             Local0 = Package (0x18)
                                 {
                                     "AAPL,slot-name", 
-                                    Buffer ()
+                                    Buffer (0x0D)
                                     {
-                                        "PCIe x16 Slot 3"
+                                        "PCIe x4 Slot"
                                     }, 
 
                                     "built-in", 
@@ -358,19 +358,19 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3ALPIN", 0x00000000)
                                     }, 
 
                                     "name", 
-                                    Buffer ()
+                                    Buffer (0x3A)
                                     {
                                         "Intel JHL6540 Alpine Ridge USB 3.1 Type-C Host Controller"
                                     }, 
 
                                     "model", 
-                                    Buffer ()
+                                    Buffer (0x3A)
                                     {
                                         "Intel JHL6540 Alpine Ridge USB 3.1 Type-C Host Controller"
                                     }, 
 
                                     "device_type", 
-                                    Buffer ()
+                                    Buffer (0x1F)
                                     {
                                         "USB 3.1 Type-C Host Controller"
                                     }, 

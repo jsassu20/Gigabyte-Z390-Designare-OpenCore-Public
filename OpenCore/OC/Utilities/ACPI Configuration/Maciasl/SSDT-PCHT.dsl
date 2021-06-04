@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "PCHT", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "PCHT", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.PCHT, DeviceObj)
@@ -21,13 +21,13 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "PCHT", 0x00000000)
                 "AAPL,slot-name", 
                 "Built In", 
                 "model", 
-                Buffer ()
+                Buffer (0x3B)
                 {
                     "Intel Cannon Lake 11 Series Chipset PCH Thermal Controller"
                 }, 
 
                 "name", 
-                Buffer ()
+                Buffer (0x25)
                 {
                     "Intel Cannon Lake Thermal Controller"
                 }, 
@@ -50,6 +50,18 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "PCHT", 0x00000000)
                     "pci8086,a379"
                 }
             })
+        }
+        
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0F)
+            }
+            Else
+            {
+                Return (Zero)
+            }
         }
     }
 }

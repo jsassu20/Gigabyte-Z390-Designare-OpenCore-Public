@@ -1,8 +1,6 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "ARPT", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "ARPT", 0x00000000)
 {
-    External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.RP04, DeviceObj)
-    External (_SB_.PCI0.RP04.ARPT, DeviceObj)
     External (_SB_.PCI0.RP04.PXSX, DeviceObj)
 
     Scope (_SB.PCI0.RP04)
@@ -25,26 +23,26 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "ARPT", 0x00000000)
                     })
                 }
 
-                Return (Package ()
+                Return (Package (0x0C)
                 {
                     "AAPL,slot-name", 
                     "PCIe x1 Slot", 
                     "model", 
-                    Buffer ()
+                    Buffer (0x3D)
                     {
-                        "Apple AirPort Extreme (Broadcom BCM94360CD 802.11 AC Wireless Network Adapter)"
+                        "Airport Extreme (Broadcom BCM94360CD 802.11 ac/n/g/b/a WiFi)"
                     }, 
 
                     "name", 
-                    Buffer (0x2C)
+                    Buffer (0x29)
                     {
-                        "Apple Airport Extreme Wireless Network Adapter"
+                        "Airport Extreme Wireless Network Adapter"
                     }, 
 
                     "device_type", 
-                    Buffer (0x16)
+                    Buffer (0x10)
                     {
-                        "Apple Airport Extreme"
+                        "Airport Extreme"
                     }, 
 
                     "device-id", 
@@ -59,6 +57,18 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "ARPT", 0x00000000)
                         "pci14e4,43a0"
                     }
                 })
+            }
+        }
+
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0F)
+            }
+            Else
+            {
+                Return (Zero)
             }
         }
     }

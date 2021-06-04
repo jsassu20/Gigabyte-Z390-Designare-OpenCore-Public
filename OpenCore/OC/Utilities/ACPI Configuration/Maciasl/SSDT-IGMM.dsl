@@ -1,50 +1,54 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "IGMM", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "IGMM", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
+    External (DTGP, MethodObj)    // 5 Arguments
 
-    Device (IGMM)
+    Scope (\_SB.PCI0)
     {
-        Name (_ADR, 0x00080000)  // _ADR: Address
-        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+        Device (IGMM)
         {
-            If ((Arg2 == Zero))
+            Name (_ADR, 0x00080000)  // _ADR: Address
+            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                Return (Buffer (One)
-                {
-                     0x03                                             // .
-                })
+                Local0 = Package (0x0A)
+                    {
+                        "AAPL,slot-name", 
+                        "Built In", 
+                        "built-in", 
+                        Buffer (One)
+                        {
+                             0x00                                             // .
+                        }, 
+
+                        "name", 
+                        "Gaussian Mixture", 
+                        "device_type", 
+                        Buffer (0x11)
+                        {
+                            "Gaussian Mixture"
+                        }, 
+
+                        "model", 
+                        Buffer (0x3B)
+                        {
+                            "Intel Cannon Lake 11 Series Chipset Gaussian Mixture Model"
+                        }
+                    }
+                DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+                Return (Local0)
             }
+        }
 
-            Return (Package ()
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
             {
-                "AAPL,slot-name", 
-                "Built In", 
-                "built-in", 
-                Buffer (One)
-                {
-                     0x00                                             // .
-                }, 
-
-                "name", 
-                "Gaussian Mixture", 
-                "device_type", 
-                Buffer (0x11)
-                {
-                    "Gaussian Mixture"
-                },
-                
-                "name",
-                Buffer ()
-                {
-                    "Intel Corporation, Gaussian Mixture Model"
-                }, 
-
-                "model", 
-                Buffer ()
-                {
-                    "Intel Corporation, Cannon Lake 11 Series Chipset Gaussian Mixture Model"
-                }
-            })
+                Return (0x0F)
+            }
+            Else
+            {
+                Return (Zero)
+            }
         }
     }
 }

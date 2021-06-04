@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "TB3ALPIN", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "TB3ALPIN", 0x00000000)
 {
     External (_SB_.PCI0.RP21, DeviceObj)
     External (_SB_.PCI0.RP21.PXSX, DeviceObj)

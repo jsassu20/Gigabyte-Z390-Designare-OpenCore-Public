@@ -1,6 +1,7 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "PLUG", 0x00003000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "PLUG", 0x00000000)
 {
     External (_PR_.C000, ProcessorObj)
+    External (_PR_.CP00, ProcessorObj)
     External (_PR_.CPU0, ProcessorObj)
     External (_PR_.P000, ProcessorObj)
     External (_PR_.PR00, ProcessorObj)
@@ -59,6 +60,20 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "PLUG", 0x00003000)
         If ((ObjectType (\_SB.PR00) == 0x0C))
         {
             Scope (\_SB.PR00)
+            {
+                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                {
+                    Return (PMPM (Arg0, Arg1, Arg2, Arg3))
+                }
+            }
+        }
+    }
+
+    If (CondRefOf (\_PR.CP00))
+    {
+        If ((ObjectType (\_PR.CP00) == 0x0C))
+        {
+            Scope (\_PR.CP00)
             {
                 Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                 {

@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "ALS0", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "ALS0", 0x00000000)
 {
     Device (_SB.ALS0)
     {
@@ -25,4 +25,5 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "ALS0", 0x00000000)
             }
         }
     }
-}    
+}
+

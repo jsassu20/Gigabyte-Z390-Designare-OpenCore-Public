@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "XSPI", 0x001F0005)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "XSPI", 0x001F0005)
 {
     External (_SB_.PCI0.XSPI, DeviceObj)
 
@@ -20,13 +20,13 @@ DefinitionBlock ("", "SSDT", 2, "APPLE", "XSPI", 0x001F0005)
                 "AAPL,slot-name", 
                 "Built In", 
                 "model", 
-                Buffer ()
+                Buffer (0x4A)
                 {
                     "Intel Cannon Lake 11 Series Chipset PCH SPI Serial Bus Chipset Controller"
                 }, 
 
                 "name", 
-                Buffer ()
+                Buffer (0x30)
                 {
                     "Intel Cannon Lake Serial Bus Chipset Controller"
                 }, 

@@ -1,78 +1,170 @@
-DefinitionBlock ("", "SSDT", 1, "Z170D", "LPCB", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "LPCB", 0x00001000)
 {
     External (_SB_.PCI0.LPCB, DeviceObj)
-    External (DTGP, MethodObj)    // 5 Arguments
 
-    Method (_SB.PCI0.LPCB._DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+    Scope (_SB.PCI0.LPCB)
     {
-        If (!Arg2)
+        Device (EC)
         {
-            Return (Buffer (One)
+            Name (_HID, "ACID0001")  // _HID: Hardware ID
+            Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                 0x03                                             // .
-            })
-        }
-
-        Return (Package ()
-        {
-                    "AAPL,slot-name", 
-                    Buffer (0x12)
-                    {
-                        "Internal PCIe Bus"
-                    }, 
-            
-                    "model", 
-                    Buffer ()
-                    {
-                        "100 Series/C230 Series Chipset LPC Controller"
-                    }, 
-
-                    "name", 
-                    Buffer ()
-                    {
-                        "Apple Internal ISA Controller"
-                    },
-                    
-                    "built-in", 
-                    Buffer (One)
-                    {
-                         0x01                                             // .
-                    },  
-
-                    "device_type", 
-                    Buffer ()
-                    {
-                        "ISA Bridge"
-                    }, 
-
-                    "device-id", 
-                    Buffer (0x04)
-                    {
-                         0x43, 0x31, 0x00, 0x00                           // :...
-                    }, 
-
-                    "vendor-id", 
-                    Buffer (0x04)
-                    {
-                         0x86, 0x80, 0x00, 0x00                           // ....
-                    }, 
-
-                    "subsystem-id", 
-                    Buffer (0x04)
-                    {
-                         0x94, 0x86, 0x00, 0x00                           // ....
-                    }, 
-
-                    "subsystem-vendor-id", 
-                    Buffer (0x04)
-                    {
-                         0x43, 0x10, 0x00, 0x00                           // C...
-                    }
-                })
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
             }
-        DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
-        Return (Local0)
         }
-    
 
+        Device (DMAC)
+        {
+            Name (_HID, EisaId ("PNP0200") /* PC-class DMA Controller */)  // _HID: Hardware ID
+            Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+            {
+                IO (Decode16,
+                    0x0000,             // Range Minimum
+                    0x0000,             // Range Maximum
+                    0x01,               // Alignment
+                    0x20,               // Length
+                    )
+                IO (Decode16,
+                    0x0081,             // Range Minimum
+                    0x0081,             // Range Maximum
+                    0x01,               // Alignment
+                    0x11,               // Length
+                    )
+                IO (Decode16,
+                    0x0093,             // Range Minimum
+                    0x0093,             // Range Maximum
+                    0x01,               // Alignment
+                    0x0D,               // Length
+                    )
+                IO (Decode16,
+                    0x00C0,             // Range Minimum
+                    0x00C0,             // Range Maximum
+                    0x01,               // Alignment
+                    0x20,               // Length
+                    )
+                DMA (Compatibility, NotBusMaster, Transfer8_16, )
+                    {4}
+            })
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
+
+        Device (RTC)
+        {
+            Name (_HID, EisaId ("PNP0B00") /* AT Real-Time Clock */)  // _HID: Hardware ID
+            Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+            {
+                IO (Decode16,
+                    0x0070,             // Range Minimum
+                    0x0070,             // Range Maximum
+                    0x01,               // Alignment
+                    0x08,               // Length
+                    )
+                IRQNoFlags ()
+                    {8}
+            })
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
+
+        Device (FWHD)
+        {
+            Name (_HID, EisaId ("INT0800") /* Intel 82802 Firmware Hub Device */)  // _HID: Hardware ID
+            Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+            {
+                Memory32Fixed (ReadOnly,
+                    0xFF000000,         // Address Base
+                    0x01000000,         // Address Length
+                    )
+            })
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
+        
+        Device (PMCR)
+        {
+            Name (_HID, EisaId ("APP9876"))  // _HID: Hardware ID
+            Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+            {
+                Memory32Fixed (ReadWrite,
+                    0xFE000000,         // Address Base
+                    0x00010000,         // Address Length
+                    )
+            })
+            
+            
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0B)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }    
+
+        Device (HPET)
+        {
+            Name (_HID, EisaId ("PNP0103") /* HPET System Timer */)  // _HID: Hardware ID
+            Name (_CID, EisaId ("PNP0C01") /* System Board */)  // _CID: Compatible ID
+            Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+            {
+                IRQNoFlags ()
+                    {0,8,11}
+                Memory32Fixed (ReadWrite,
+                    0xFED00000,         // Address Base
+                    0x00000400,         // Address Length
+                    )
+            })
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+        }
+    }
+}
 

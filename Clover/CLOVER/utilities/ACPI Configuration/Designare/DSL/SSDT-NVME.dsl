@@ -1,4 +1,4 @@
-DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "NVME", 0x00000000)
 {
     External (_SB_.PCI0.PEG1, DeviceObj)
     External (_SB_.PCI0.PEG1.PEGP, DeviceObj)
@@ -30,23 +30,23 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                 Return (Package (0x0C)
                 {
                     "AAPL,slot-name", 
-                    "M.2 S Slot", 
+                    "M.2E Slot", 
                     "model", 
-                    Buffer ()
+                    Buffer (0x38)
                     {
-                        "Kingston SA2000/500G M.2 x4 NVME Solid State Storage"
+                        "Kingston SA2000/500G 500GB NVMExpress Solid State Drive"
                     }, 
 
                     "name", 
-                    Buffer ()
+                    Buffer (0x15)
                     {
-                        "Kingston SA2000 NVME Solid SSD"
+                        "Apple SSD Controller"
                     }, 
 
                     "device_type", 
-                    Buffer ()
+                    Buffer (0x12)
                     {
-                        "NVM Express Controller"
+                        "NVMExpress Device"
                     }, 
 
                     "device-id", 
@@ -63,8 +63,20 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                 })
             }
         }
+
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0F)
+            }
+            Else
+            {
+                Return (Zero)
+            }
+        }
     }
-    
+
     Scope (\_SB.PCI0.RP09)
     {
         Scope (PXSX)
@@ -90,21 +102,21 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                     "AAPL,slot-name", 
                     "M.2M Slot", 
                     "model", 
-                    Buffer ()
+                    Buffer (0x3F)
                     {
-                        "Western Digital WDS500G3X0C M.2 x4 NVME Solid State Drive"
+                        "Western Digital Black SN750 500GB NVMExpress Solid State Drive"
                     }, 
 
                     "name", 
-                    Buffer ()
+                    Buffer (0x15)
                     {
-                        "Western Digital Black SN750 NVME SSD"
+                        "Apple SSD Controller"
                     }, 
 
                     "device_type", 
-                    Buffer ()
+                    Buffer (0x12)
                     {
-                        "NVM Express Controller"
+                        "NVMExpress Device"
                     }, 
 
                     "device-id", 
@@ -119,6 +131,18 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                         "pci15b7,5006"
                     }
                 })
+            }
+        }
+
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0F)
+            }
+            Else
+            {
+                Return (Zero)
             }
         }
     }
@@ -148,21 +172,21 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                     "AAPL,slot-name", 
                     "M.2P Slot", 
                     "model", 
-                    Buffer ()
+                    Buffer (0x3F)
                     {
-                        "Western Digital WDS500G3X0C M.2 x4 NVME Solid State Drive"
+                        "Western Digital Black SN750 500GB NVMExpress Solid State Drive"
                     }, 
 
                     "name", 
-                    Buffer ()
+                    Buffer (0x15)
                     {
-                        "Western Digital Black SN750 NVME SSD"
+                        "Apple SSD Controller"
                     }, 
 
                     "device_type", 
-                    Buffer ()
+                    Buffer (0x12)
                     {
-                        "NVM Express Controller"
+                        "NVMExpress Device"
                     }, 
 
                     "device-id", 
@@ -177,6 +201,18 @@ DefinitionBlock ("", "SSDT", 1, "APPLE", "NVME", 0x00000000)
                         "pci15b7,5006"
                     }
                 })
+            }
+        }
+
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (0x0F)
+            }
+            Else
+            {
+                Return (Zero)
             }
         }
     }

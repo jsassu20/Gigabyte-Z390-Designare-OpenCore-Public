@@ -1,50 +1,67 @@
-DefinitionBlock ("", "SSDT", 2, "APPLE", "IGMM", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "APPLE ", "IGMM", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
 
-    Device (IGMM)
+    Scope (_SB.PCI0)
     {
-        Name (_ADR, 0x00080000)  // _ADR: Address
-        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+        Device (IGMM)
         {
-            If ((Arg2 == Zero))
+            Name (_ADR, 0x00080000)  // _ADR: Address
+            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                Return (Buffer (One)
+                If ((Arg2 == Zero))
                 {
-                     0x03                                             // .
+                    Return (Buffer (One)
+                    {
+                         0x03                                             // .
+                    })
+                }
+
+                Return (Package (0x0C)
+                {
+                    "AAPL,slot-name", 
+                    Buffer ()
+                    {
+                        "Built In"
+                    }, 
+
+                    "built-in", 
+                    Buffer ()
+                    {
+                         0x00                                             // .
+                    }, 
+
+                    "device_type", 
+                    Buffer ()
+                    {
+                        "Gaussian Mixture"
+                    }, 
+
+                    "name", 
+                    Buffer ()
+                    {
+                        "Intel Core Processor Gaussian Mixture Model"
+                    }, 
+
+                    "model", 
+                    Buffer ()
+                    {
+                        "Intel 8th Generation Core i7 Processor Gaussian Mixture Model"
+                    }
                 })
             }
 
-            Return (Package ()
+            Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                "AAPL,slot-name", 
-                "Built In", 
-                "built-in", 
-                Buffer (One)
+                If (_OSI ("Darwin"))
                 {
-                     0x00                                             // .
-                }, 
-
-                "name", 
-                "Gaussian Mixture", 
-                "device_type", 
-                Buffer (0x11)
-                {
-                    "Gaussian Mixture"
-                },
-                
-                "name",
-                Buffer ()
-                {
-                    "Intel Corporation, Gaussian Mixture Model"
-                }, 
-
-                "model", 
-                Buffer ()
-                {
-                    "Intel Corporation, Cannon Lake 11 Series Chipset Gaussian Mixture Model"
+                    Return (0x0F)
                 }
-            })
+                Else
+                {
+                    Return (Zero)
+                }
+            }
         }
     }
 }

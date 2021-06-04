@@ -79,7 +79,7 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>_STA RTC</string>
+					<string>Rename _STA (RTC)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -89,7 +89,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
+					<string>Rename SAT0 to SATA (Disk)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -99,7 +99,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HECI to IMEI</string>
+					<string>Rename HECI to IMEI (IGPU DRM)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -109,7 +109,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
+					<string>Rename HDAS to HDEF (Audio)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -119,7 +119,37 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>HPET _CRS to XCRS Rename</string>
+					<string>Rename GLAN to ETH0 (Ethernet)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>R0xBTg==</data>
+					<key>Replace</key>
+					<data>RVRIMA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename _DSM to XDSM (NVDIMM)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0RTTQ==</data>
+					<key>Replace</key>
+					<data>WERTTQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>GUPC method return 00,ff,00,00 to 00,03,00,00</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>AAr/AAA=</data>
+					<key>Replace</key>
+					<data>AAoDAAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename _CRS to XCRS (HPET)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -129,7 +159,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>RTC IRQ 8 Patch</string>
+					<string>Rename _RTC (IRQ)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -139,7 +169,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>TIMR IRQ 0 Patch</string>
+					<string>Rename TIMR (IRQ)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -506,7 +536,7 @@
 				<key>hda-gfx</key>
 				<string>onboard-2</string>
 				<key>layout-id</key>
-				<integer>16</integer>
+				<data>EAAAAA==</data>
 				<key>model</key>
 				<string>Realtek ALC1220 HD Audio (Intel Cannon Lake 11 Series Chipset PCH cAVS Audio)</string>
 				<key>name</key>
