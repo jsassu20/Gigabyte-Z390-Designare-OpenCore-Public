@@ -73,15 +73,13 @@
 				<key>FixWAK</key>
 				<false/>
 			</dict>
-			<key>Name</key>
-			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
 					<string>Rename _STA (RTC)</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>oAqTU1RBUwE=</data>
 					<key>Replace</key>
@@ -101,7 +99,7 @@
 					<key>Comment</key>
 					<string>Rename HECI to IMEI (IGPU DRM)</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>SEVDSQ==</data>
 					<key>Replace</key>
@@ -111,7 +109,7 @@
 					<key>Comment</key>
 					<string>Rename HDAS to HDEF (Audio)</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>SERBUw==</data>
 					<key>Replace</key>
@@ -119,13 +117,13 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename GLAN to ETH0 (Ethernet)</string>
+					<string>Rename GLAN to ETH1 (Ethernet)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>R0xBTg==</data>
 					<key>Replace</key>
-					<data>RVRIMA==</data>
+					<data>RVRIMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -136,16 +134,6 @@
 					<data>X0RTTQ==</data>
 					<key>Replace</key>
 					<data>WERTTQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>GUPC method return 00,ff,00,00 to 00,03,00,00</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>AAr/AAA=</data>
-					<key>Replace</key>
-					<data>AAoDAAA=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>

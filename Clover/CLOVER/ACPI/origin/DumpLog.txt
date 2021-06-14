@@ -1,0 +1,152 @@
+14:855  1:113  Found BIOS RSDP at f05b0
+14:855  0:000  Printing ACPI tables from RSDP f05b0 ...
+14:855  0:000   f05b0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+14:855  0:000    (Rsdt: 28908028)
+14:855  0:000    28908028: 'RSDT', 'A M I', Rev: 1, Len: 128
+14:855  0:000    Tables in Rsdt: 23
+14:855  0:000    0. 28908198: 'FACP', 'A M I', Rev: 2, Len: 132
+14:855  0:000        (Dsdt: 28908220, Facs: 36F70040)
+14:855  0:000        28908220: 'DSDT', 'A M I', Rev: 2, Len: 265162
+14:855  0:000        36f70040: 'FACS', Ver: 0, Len: 64
+14:855  0:000    1. 28948f08: 'APIC', 'A M I', Rev: 4, Len: 244
+14:855  0:000    2. 28949000: 'FPDT', 'A M I', Rev: 1, Len: 68
+14:855  0:000    3. 28949048: 'FIDT', 'A M I', Rev: 1, Len: 156
+14:855  0:000    4. 289490e8: 'MCFG', 'A M I', Rev: 1, Len: 60
+14:855  0:000    5. 28949128: 'SSDT', 'A M I', Rev: 1, Len: 516
+14:855  0:000    6. 28949330: 'SSDT', 'A M I', Rev: 2, Len: 6101
+14:855  0:000    7. 2894ab08: 'SSDT', 'A M I', Rev: 1, Len: 33834
+14:855  0:000    8. 28952f38: 'SSDT', 'A M I', Rev: 2, Len: 12743
+14:855  0:000    9. 28956100: 'SSDT', 'A M I', Rev: 2, Len: 9048
+14:855  0:000    10. 28958458: 'HPET', 'A M I', Rev: 1, Len: 56
+14:855  0:000    11. 28958490: 'SSDT', 'A M I', Rev: 2, Len: 3998
+14:855  0:000    12. 28959430: 'SSDT', 'A M I', Rev: 2, Len: 11327
+14:855  0:000    13. 2895c070: 'UEFI', 'A M I', Rev: 1, Len: 66
+14:855  0:000    14. 2895c0b8: 'LPIT', 'A M I', Rev: 1, Len: 92
+14:855  0:000    15. 2895c118: 'SSDT', 'A M I', Rev: 2, Len: 10206
+14:855  0:000    16. 2895e8f8: 'SSDT', 'A M I', Rev: 2, Len: 3734
+14:855  0:000    17. 2895f790: 'DBGP', 'A M I', Rev: 1, Len: 52
+14:855  0:000    18. 2895f7c8: 'DBG2', 'A M I', Rev: 0, Len: 84
+14:855  0:000    19. 2895f820: 'DMAR', 'A M I', Rev: 1, Len: 168
+14:855  0:000    20. 2895f8c8: 'VFCT', 'A M I', Rev: 1, Len: 60548
+14:855  0:000    21. 2896e550: 'BGRT', 'A M I', Rev: 1, Len: 56
+14:855  0:000    22. 2896e588: 'WSMT', 'A M I', Rev: 1, Len: 40
+14:855  0:000  Found UEFI Acpi 2.0 RSDP at 28908000
+14:855  0:000  Saving ACPI tables from RSDP 28908000 to ACPI\origin ...
+14:855  0:000   28908000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+14:962  0:106    (Xsdt: 289080b0, Rsdt: 28908028)
+14:962  0:000    289080b0: 'XSDT', 'A M I', Rev: 1, Len: 220 -> XSDT.aml
+15:061  0:099    28908028: 'RSDT', 'A M I', Rev: 1, Len: 128 -> RSDT.aml
+15:149  0:088    Tables in Xsdt: 23
+15:149  0:000    0. 28948df0: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+15:238  0:088        (Dsdt: 28908220, Facs: 36F70080, XDsdt: 28908220, XFacs: 0)
+15:238  0:000        28908220: 'DSDT', 'A M I', Rev: 2, Len: 265162 -> DSDT.aml
+15:327  0:088        36f70080: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+15:426  0:099    1. 28948f08: 'APIC', 'A M I', Rev: 4, Len: 244 -> APIC.aml
+15:526  0:099    2. 28949000: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+15:614  0:088    3. 28949048: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+15:714  0:099    4. 289490e8: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+15:813  0:099    5. 28949128: 'SSDT', 'A M I', Rev: 1, Len: 516 -> SSDT-0.aml
+15:913  0:099    6. 28949330: 'SSDT', 'A M I', Rev: 2, Len: 6101 -> SSDT-1.aml
+16:002  0:088    7. 2894ab08: 'SSDT', 'A M I', Rev: 1, Len: 33834 -> SSDT-2.aml
+16:101  0:099    8. 28952f38: 'SSDT', 'A M I', Rev: 2, Len: 12743 -> SSDT-3.aml
+16:200  0:099    9. 28956100: 'SSDT', 'A M I', Rev: 2, Len: 9048 -> SSDT-4.aml
+16:289  0:088    10. 28958458: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+16:378  0:088    11. 28958490: 'SSDT', 'A M I', Rev: 2, Len: 3998 -> SSDT-5.aml
+16:466  0:088    12. 28959430: 'SSDT', 'A M I', Rev: 2, Len: 11327 -> SSDT-6.aml
+16:566  0:099    13. 2895c070: 'UEFI', 'A M I', Rev: 1, Len: 66 -> UEFI.aml
+16:665  0:099    14. 2895c0b8: 'LPIT', 'A M I', Rev: 1, Len: 92 -> LPIT.aml
+16:754  0:088    15. 2895c118: 'SSDT', 'A M I', Rev: 2, Len: 10206 -> SSDT-7.aml
+16:842  0:088    16. 2895e8f8: 'SSDT', 'A M I', Rev: 2, Len: 3734 -> SSDT-8.aml
+16:931  0:088    17. 2895f790: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+17:019  0:088    18. 2895f7c8: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+17:119  0:099    19. 2895f820: 'DMAR', 'A M I', Rev: 1, Len: 168 -> DMAR.aml
+17:208  0:088    20. 2895f8c8: 'VFCT', 'A M I', Rev: 1, Len: 60548 -> VFCT.aml
+17:308  0:100    21. 2896e550: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+17:396  0:088    22. 2896e588: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+17:495  0:099    Tables in Rsdt: 23
+17:495  0:000    0. 28908198: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+17:595  0:099        (Dsdt: 28908220, Facs: 36F70040)
+17:595  0:000        28908220: 'DSDT', 'A M I', Rev: 2, Len: 265162
+17:595  0:000        36f70040: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+17:684  0:088    1. 28948f08: 'APIC', 'A M I', Rev: 4, Len: 244
+17:684  0:000    2. 28949000: 'FPDT', 'A M I', Rev: 1, Len: 68
+17:684  0:000    3. 28949048: 'FIDT', 'A M I', Rev: 1, Len: 156
+17:684  0:000    4. 289490e8: 'MCFG', 'A M I', Rev: 1, Len: 60
+17:684  0:000    5. 28949128: 'SSDT', 'A M I', Rev: 1, Len: 516
+17:684  0:000    6. 28949330: 'SSDT', 'A M I', Rev: 2, Len: 6101
+17:684  0:000    7. 2894ab08: 'SSDT', 'A M I', Rev: 1, Len: 33834
+17:684  0:000    8. 28952f38: 'SSDT', 'A M I', Rev: 2, Len: 12743
+17:684  0:000    9. 28956100: 'SSDT', 'A M I', Rev: 2, Len: 9048
+17:684  0:000    10. 28958458: 'HPET', 'A M I', Rev: 1, Len: 56
+17:684  0:000    11. 28958490: 'SSDT', 'A M I', Rev: 2, Len: 3998
+17:684  0:000    12. 28959430: 'SSDT', 'A M I', Rev: 2, Len: 11327
+17:684  0:000    13. 2895c070: 'UEFI', 'A M I', Rev: 1, Len: 66
+17:684  0:000    14. 2895c0b8: 'LPIT', 'A M I', Rev: 1, Len: 92
+17:684  0:000    15. 2895c118: 'SSDT', 'A M I', Rev: 2, Len: 10206
+17:684  0:000    16. 2895e8f8: 'SSDT', 'A M I', Rev: 2, Len: 3734
+17:684  0:000    17. 2895f790: 'DBGP', 'A M I', Rev: 1, Len: 52
+17:684  0:000    18. 2895f7c8: 'DBG2', 'A M I', Rev: 0, Len: 84
+17:684  0:000    19. 2895f820: 'DMAR', 'A M I', Rev: 1, Len: 168
+17:684  0:000    20. 2895f8c8: 'VFCT', 'A M I', Rev: 1, Len: 60548
+17:684  0:000    21. 2896e550: 'BGRT', 'A M I', Rev: 1, Len: 56
+17:684  0:000    22. 2896e588: 'WSMT', 'A M I', Rev: 1, Len: 40
+17:684  0:000  Found UEFI Acpi 1.0 RSDP at 28908000
+17:684  0:000  Printing ACPI tables from RSDP 28908000 ...
+17:684  0:000   28908000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+17:684  0:000    (Xsdt: 289080b0, Rsdt: 28908028)
+17:684  0:000    289080b0: 'XSDT', 'A M I', Rev: 1, Len: 220
+17:684  0:000    28908028: 'RSDT', 'A M I', Rev: 1, Len: 128
+17:684  0:000    Tables in Xsdt: 23
+17:684  0:000    0. 28948df0: 'FACP', 'A M I', Rev: 6, Len: 276
+17:684  0:000        (Dsdt: 28908220, Facs: 36F70080, XDsdt: 28908220, XFacs: 0)
+17:684  0:000        28908220: 'DSDT', 'A M I', Rev: 2, Len: 265162
+17:684  0:000        36f70080: 'FACS', Ver: 2, Len: 64
+17:684  0:000    1. 28948f08: 'APIC', 'A M I', Rev: 4, Len: 244
+17:684  0:000    2. 28949000: 'FPDT', 'A M I', Rev: 1, Len: 68
+17:684  0:000    3. 28949048: 'FIDT', 'A M I', Rev: 1, Len: 156
+17:684  0:000    4. 289490e8: 'MCFG', 'A M I', Rev: 1, Len: 60
+17:684  0:000    5. 28949128: 'SSDT', 'A M I', Rev: 1, Len: 516
+17:684  0:000    6. 28949330: 'SSDT', 'A M I', Rev: 2, Len: 6101
+17:684  0:000    7. 2894ab08: 'SSDT', 'A M I', Rev: 1, Len: 33834
+17:684  0:000    8. 28952f38: 'SSDT', 'A M I', Rev: 2, Len: 12743
+17:684  0:000    9. 28956100: 'SSDT', 'A M I', Rev: 2, Len: 9048
+17:684  0:000    10. 28958458: 'HPET', 'A M I', Rev: 1, Len: 56
+17:684  0:000    11. 28958490: 'SSDT', 'A M I', Rev: 2, Len: 3998
+17:684  0:000    12. 28959430: 'SSDT', 'A M I', Rev: 2, Len: 11327
+17:684  0:000    13. 2895c070: 'UEFI', 'A M I', Rev: 1, Len: 66
+17:684  0:000    14. 2895c0b8: 'LPIT', 'A M I', Rev: 1, Len: 92
+17:684  0:000    15. 2895c118: 'SSDT', 'A M I', Rev: 2, Len: 10206
+17:684  0:000    16. 2895e8f8: 'SSDT', 'A M I', Rev: 2, Len: 3734
+17:684  0:000    17. 2895f790: 'DBGP', 'A M I', Rev: 1, Len: 52
+17:684  0:000    18. 2895f7c8: 'DBG2', 'A M I', Rev: 0, Len: 84
+17:684  0:000    19. 2895f820: 'DMAR', 'A M I', Rev: 1, Len: 168
+17:684  0:000    20. 2895f8c8: 'VFCT', 'A M I', Rev: 1, Len: 60548
+17:684  0:000    21. 2896e550: 'BGRT', 'A M I', Rev: 1, Len: 56
+17:684  0:000    22. 2896e588: 'WSMT', 'A M I', Rev: 1, Len: 40
+17:684  0:000    Tables in Rsdt: 23
+17:684  0:000    0. 28908198: 'FACP', 'A M I', Rev: 2, Len: 132
+17:684  0:000        (Dsdt: 28908220, Facs: 36F70040)
+17:684  0:000        28908220: 'DSDT', 'A M I', Rev: 2, Len: 265162
+17:684  0:000        36f70040: 'FACS', Ver: 0, Len: 64
+17:684  0:000    1. 28948f08: 'APIC', 'A M I', Rev: 4, Len: 244
+17:684  0:000    2. 28949000: 'FPDT', 'A M I', Rev: 1, Len: 68
+17:684  0:000    3. 28949048: 'FIDT', 'A M I', Rev: 1, Len: 156
+17:684  0:000    4. 289490e8: 'MCFG', 'A M I', Rev: 1, Len: 60
+17:684  0:000    5. 28949128: 'SSDT', 'A M I', Rev: 1, Len: 516
+17:684  0:000    6. 28949330: 'SSDT', 'A M I', Rev: 2, Len: 6101
+17:684  0:000    7. 2894ab08: 'SSDT', 'A M I', Rev: 1, Len: 33834
+17:684  0:000    8. 28952f38: 'SSDT', 'A M I', Rev: 2, Len: 12743
+17:684  0:000    9. 28956100: 'SSDT', 'A M I', Rev: 2, Len: 9048
+17:684  0:000    10. 28958458: 'HPET', 'A M I', Rev: 1, Len: 56
+17:684  0:000    11. 28958490: 'SSDT', 'A M I', Rev: 2, Len: 3998
+17:684  0:000    12. 28959430: 'SSDT', 'A M I', Rev: 2, Len: 11327
+17:684  0:000    13. 2895c070: 'UEFI', 'A M I', Rev: 1, Len: 66
+17:684  0:000    14. 2895c0b8: 'LPIT', 'A M I', Rev: 1, Len: 92
+17:684  0:000    15. 2895c118: 'SSDT', 'A M I', Rev: 2, Len: 10206
+17:684  0:000    16. 2895e8f8: 'SSDT', 'A M I', Rev: 2, Len: 3734
+17:684  0:000    17. 2895f790: 'DBGP', 'A M I', Rev: 1, Len: 52
+17:684  0:000    18. 2895f7c8: 'DBG2', 'A M I', Rev: 0, Len: 84
+17:684  0:000    19. 2895f820: 'DMAR', 'A M I', Rev: 1, Len: 168
+17:684  0:000    20. 2895f8c8: 'VFCT', 'A M I', Rev: 1, Len: 60548
+17:684  0:000    21. 2896e550: 'BGRT', 'A M I', Rev: 1, Len: 56
+17:684  0:000    22. 2896e588: 'WSMT', 'A M I', Rev: 1, Len: 40
