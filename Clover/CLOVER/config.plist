@@ -77,16 +77,6 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>Rename _STA (RTC)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>oAqTU1RBUwE=</data>
-					<key>Replace</key>
-					<data>oAqRCv8L//8=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Rename SAT0 to SATA (Disk)</string>
 					<key>Disabled</key>
 					<false/>
@@ -94,26 +84,6 @@
 					<data>U0FUMA==</data>
 					<key>Replace</key>
 					<data>U0FUQQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename HECI to IMEI (IGPU DRM)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>SEVDSQ==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename HDAS to HDEF (Audio)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>SERBUw==</data>
-					<key>Replace</key>
-					<data>SERFRg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -134,6 +104,16 @@
 					<data>X0RTTQ==</data>
 					<key>Replace</key>
 					<data>WERTTQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X09TSQ==</data>
+					<key>Replace</key>
+					<data>WE9TSQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -195,7 +175,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>shikigva=128 watchdog=0 -no_compat_check alcid=16</string>
+		<string>shikigva=128 watchdog=0 -no_compat_check</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -739,6 +719,20 @@
 				<key>Replace</key>
 				<data>g/k/Dw==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
 		</array>
 		<key>PanicNoKextDump</key>
 		<true/>
@@ -800,9 +794,9 @@
 		<key>SyncRuntimePermissions</key>
 		<true/>
 		<key>ThirdPartyDrives</key>
-		<false/>
+		<true/>
 		<key>XhciPortLimit</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
