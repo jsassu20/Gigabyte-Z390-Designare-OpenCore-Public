@@ -105,46 +105,6 @@
 					<key>Replace</key>
 					<data>WERTTQ==</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X09TSQ==</data>
-					<key>Replace</key>
-					<data>WE9TSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename _CRS to XCRS (HPET)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>JV9DUlM=</data>
-					<key>Replace</key>
-					<data>JVhDUlM=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename _RTC (IRQ)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>IgABeQA=</data>
-					<key>Replace</key>
-					<data>IgAAeQA=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename TIMR (IRQ)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>IgEAeQA=</data>
-					<key>Replace</key>
-					<data>IgAAeQA=</data>
-				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
