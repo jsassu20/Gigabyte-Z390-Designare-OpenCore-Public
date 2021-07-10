@@ -105,6 +105,36 @@
 					<key>Replace</key>
 					<data>WERTTQ==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>HPET _CRS to XCRS Rename</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>JV9DUlM=</data>
+					<key>Replace</key>
+					<data>JVhDUlM=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>RTC IRQ 8 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>IgABeQA=</data>
+					<key>Replace</key>
+					<data>IgAAeQA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>TIMR IRQ 0 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>IgEAeQA=</data>
+					<key>Replace</key>
+					<data>IgAAeQA=</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -135,7 +165,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>shikigva=128 watchdog=0 -no_compat_check</string>
+		<string>shikigva=80 watchdog=0 debug=0x100 keepsyms=1 dart=0 alcid=11 igfxfw=2</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -551,7 +581,7 @@
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>3840x2160</string>
+		<string>2560x1440</string>
 		<key>ShowOptimus</key>
 		<true/>
 		<key>Theme</key>
